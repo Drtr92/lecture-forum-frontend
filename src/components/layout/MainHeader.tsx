@@ -5,8 +5,7 @@ import Button from "../common/button/Button.tsx";
 import { IoMoon } from "react-icons/io5";
 
 const HeaderContainer = styled.header`
-    display: flex;
-    justify-content: center;
+    width: 100%;
     height: 64px;
     background-color: ${props => props.theme.color.background.paper};
     border-bottom: 1px solid ${props => props.theme.color.divider};
@@ -18,6 +17,7 @@ const HeaderInner = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
     height: 64px;
 `;
 
