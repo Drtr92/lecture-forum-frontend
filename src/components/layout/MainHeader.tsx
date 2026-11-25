@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router";
 import { IoIosChatbubbles } from "react-icons/io";
 import Button from "../common/button/Button.tsx";
-import { IoMoon } from "react-icons/io5";
+import { FaSun } from "react-icons/fa";
 
 const HeaderContainer = styled.header`
     width: 100%;
@@ -46,7 +46,7 @@ function MainHeader() {
                 </Logo>
                 <NavGroup>
                     <Button color={"secondary"} variant={"icon"} onClick={() => {}}>
-                        <IoMoon size={23} />
+                        <FaSun size={23} />
                     </Button>
                     <Button color={"secondary"} as={Link} to={"/auth/signin"} variant={"text"}>
                         로그인
