@@ -6,7 +6,7 @@ const phoneRegex = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
 // zod 패키지를 통해 검증할 Input값에 대한 객체모양 생성
 export const createUserSchema = z
     .object({
-        username: z.string().min(4, "아이디는 4자 이상 입렵해주세요."),
+        username: z.string().min(4, "아이디는 4자 이상 입력해주세요."),
         password: z.string().min(6, "비밀번호는 6자 이상 입력해주세요."),
         confirmPassword: z.string().min(1, "비밀번호 확인을 입력해주세요."), // 비밀번호와 같은지는 다른 조건으로 처리하고
         nickname: z

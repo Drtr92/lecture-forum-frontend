@@ -64,9 +64,14 @@ function SignUpPage() {
         { text: "여자", value: GenderType.FEMALE },
     ];
 
+    const onSubmit = async (input: CreateUserInputType) => {
+        // 입력된 정보(input)을 가지고 백엔드에게 요청
+        // 앞으론 fetch를 사용하지 않을 것임. axios 패키지를 이용할 것임
+    }
+
     return (
         <AuthContainer>
-            <AuthFormCard>
+            <AuthFormCard onSubmit={handleSubmit()}>
                 <AuthTitle>회원가입</AuthTitle>
                 <AuthSubTitle>톡앤톡스에 오신 것을 환영합니다!</AuthSubTitle>
                 <InputGroup
