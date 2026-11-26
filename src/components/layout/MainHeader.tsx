@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import { IoIosChatbubbles } from "react-icons/io";
 import Button from "../common/button/Button.tsx";
 import { useContext } from "react";
-import { ThemeContext } from "../../contexts/ThemeContext.ts";
+import { ThemeContext } from "../../contexts/theme/ThemeContext.ts";
 import { IoMoon, IoSunny } from "react-icons/io5";
 
 const HeaderContainer = styled.header`

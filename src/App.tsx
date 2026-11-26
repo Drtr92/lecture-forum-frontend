@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./styles/theme.ts";
 import { RouterProvider } from "react-router";
 import GetRouter from "./router/GetRouter.tsx";
-import { ThemeContext, type ThemeType } from "./contexts/ThemeContext.ts";
+import { ThemeContext, type ThemeType } from "./contexts/theme/ThemeContext.ts";
 import { useEffect, useState } from "react";
 
 function App() {
