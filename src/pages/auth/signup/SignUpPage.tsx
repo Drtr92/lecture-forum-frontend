@@ -9,7 +9,6 @@ import Button from "../../../components/common/button/Button.tsx";
 import { useNavigate } from "react-router";
 import axiosInstance from "../../../api/axiosInstance.ts";
 import * as axios from "axios";
-import { AxiosError } from "axios";
 
 const AuthContainer = styled.div`
     display: flex;
